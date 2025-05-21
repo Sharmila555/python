@@ -1,0 +1,20 @@
+import numpy as np
+
+
+n = int(input())
+
+
+matrix = [list(map(float, input().split())) for _ in range(n)]
+
+
+np_matrix = np.array(matrix)
+
+
+det = np.linalg.det(np_matrix)
+
+
+print(round(det, 2))
+
+
+
+
